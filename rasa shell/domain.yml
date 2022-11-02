@@ -1,0 +1,51 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_hotelRequirement:
+  - text: "List of hotels in Hyderabad:
+           1. Taj Falaknuma Palace
+           2. Trident Hyderabad
+           3. Taj Krishna
+           4. Novotel Hyderabad 
+           5. ITC Kohenur, a Luxury Collection Hotel, Hyderabad
+           6. The Westin Hyderabad Mindspace
+           7. Hyderabad Marriott Hotel & Convention Centre
+           8. Park Hyatt Hotel and Residences, Hyderabad
+           9. Sheraton Hyderabad Hotel
+           10. Avasa Hotel"
+
+  utter_bestHotel:
+  - text: "Novotel Hyderabad "
+    image: "https://th.bing.com/th/id/R.1772efc28e6cc4912e95bde3171c413c?rik=LRw3%2fkW8tDBXDQ&riu=http%3a%2f%2fd2e5ushqwiltxm.cloudfront.net%2fwp-content%2fuploads%2fsites%2f120%2f2017%2f04%2f11083356%2fNovotel-Hyderabad-05-Cop.jpg&ehk=2folwZCybg9c%2biFH3YDtX5GmXTW0SdK9yO43%2fCMuM7M%3d&risl=&pid=ImgRaw&r=0"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
